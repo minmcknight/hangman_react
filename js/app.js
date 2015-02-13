@@ -1,13 +1,10 @@
-var Hello = React.createClass({
-  render: function () {
-    var output;
-    
-    output = React.DOM.div({
-      children: 'Hello world'
-    });
-    
-    return output;
+var ExampleApplication = React.createClass({
+  render: function() {
+    var message =
+      'React is running successfully';
+
+    return <p>{message}</p>;
   }
 });
 
-React.renderComponent(Hello(), document.body);
+React.render(<ExampleApplication/>, document.getElementById('container'));
