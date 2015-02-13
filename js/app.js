@@ -1,10 +1,29 @@
-var ExampleApplication = React.createClass({
-  render: function() {
-    var message =
-      'React is running successfully';
+var Game = function(word) {
+	this.word = word;
+	this.guessed = {
+		right: ['t'],
+		wrong: []
+	};
+	this.partial = function() {
+		var partialWord = [];
+		for (var i = 0; i < this.word.length; i++) {
+			if (this.guessed.right.indexOf(this.word[i]) >= 0) {
+				partialWord.push(this.word[i]);
+			} else {
+				partialWord.push('_');
+			}
+		}
+		return partialWord.join(' ');
+	}
+}
 
-    return <p>{message}</p>;
+var HangmanView = React.createClass({
+	game: function() {
+		return (new Game('test'));
+	},
+  render: function() {
+    return <p>{this.game().partial()}</p>;
   }
 });
 
-React.render(<ExampleApplication/>, document.getElementById('container'));
+React.render(<HangmanView/>, document.getElementById('container'));
