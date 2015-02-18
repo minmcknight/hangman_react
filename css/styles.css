@@ -1,4 +1,64 @@
+* {
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
 html {
-  background-color: #000;
-  color: #fff;
+  background-color: #ED1A36;
+  border-color: #E1E0D0;
+  border-style: solid;
+  border-width: 1em;
+  height:100%;
+  padding:1em;
+  font-family: oswald;
+  color: #E1E0D0;
+}
+
+.left-col{
+  margin-top: -800px;
+  float:left;
+  display: inline-block;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+}
+
+#game {
+
+}
+
+.right-col{
+  float:right;
+  display: inline-block;
+}
+.hangman {
+  margin-top: -2em;
+  width:300px;
+  height:700px;
+}
+
+.hangman {
+  font-size: 3em;
+  color:#E1E0D0;
+}
+
+.guess {
+  padding-top: 9em;
+  font-size: 2em;
+}
+
+.reset {
+  height: 100px;
+    width: 100px;
+  padding-top: 1em;
+}
+
+.wins, .losses {
+  padding-top: 2em;
+  height: 300px;
+    width: 300px; 
+  display: inline-block;
 }
