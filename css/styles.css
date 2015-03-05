@@ -14,11 +14,16 @@ html {
   font-family: oswald;
   color: #E1E0D0;
 }
+h1{
+  font-size: 5em;
+}
+#word{
+  font-size: 3em;
+}
 
-.left-col{
-  margin-top: -800px;
-  float:left;
-  display: inline-block;
+#guess{
+  font-size: 3em;
+  font-family: oswald;
 }
 
 .container {
@@ -26,39 +31,6 @@ html {
   justify-content: space-between;
 }
 
-#game {
-
-}
-
-.right-col{
-  float:right;
-  display: inline-block;
-}
-.hangman {
-  margin-top: -2em;
-  width:300px;
-  height:700px;
-}
-
-.hangman {
+#wins, #losses, #score {
   font-size: 3em;
-  color:#E1E0D0;
-}
-
-.guess {
-  padding-top: 9em;
-  font-size: 2em;
-}
-
-.reset {
-  height: 100px;
-    width: 100px;
-  padding-top: 1em;
-}
-
-.wins, .losses {
-  padding-top: 2em;
-  height: 300px;
-    width: 300px; 
-  display: inline-block;
 }

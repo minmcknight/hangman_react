@@ -1,5 +1,5 @@
 var words = ["react", "angular", "backbone", "ember", "jquery", "protoype",
-            "scriptaculous", "dojo", "mootools", "three", "rails", "python"];
+            "scriptaculous", "dojo", "mootools", "three", "rails", "python", "node", "prototype", "dynamic", "functions", "this", "paradigm", "language", "object", "self", "virtual", "facebook", "instagram", "virtual", "compilation", "ecmascript", "zuckerberg", "harvard", "dropout", "application"];
         var Word = React.createClass({
             render: function(){
                  return ( <div id="word" class="guess">{this.getPartialWord()}</div>);
